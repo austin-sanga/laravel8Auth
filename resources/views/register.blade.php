@@ -1,5 +1,5 @@
-<h1>Login Page</h1>
-<form action="/login" method="POST">
+<h1>Register Page</h1>
+<form action="/register" method="POST">
     <input type="text" name="email" placeholder="Email" required>
     <br><br>
     <input type="password" name="password" placeholder="Password" required>

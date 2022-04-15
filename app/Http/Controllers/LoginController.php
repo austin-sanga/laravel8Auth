@@ -6,13 +6,15 @@ use Illuminate\Http\Request;
 
 // this is essential for user Authenticating
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class LoginController extends Controller
 {
     /* 
-    this is copied from the documentation
+      this is copied from the documentation
 
-     */
+    */
+     
     
     /**
      * Handle an authentication attempt.
