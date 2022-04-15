@@ -19,12 +19,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::view('dashboard','dashboard');
+
 Route::view('login', 'login');
 
 Route::view('register', 'register');
 
 Route::POST('/login',[LoginController::class,'authenticate']);
 
-Route::POST('/register',[RegisterController::class,'register']);
+Route::post('/registration',[RegisterController::class,'register']);
 
 
