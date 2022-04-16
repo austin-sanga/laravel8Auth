@@ -11,6 +11,14 @@ class RegisterController extends Controller
     //
     function register(Request $req)
     {
+        /* 
+        always put on the validation before entering the data 
+        Thats the first step into feeding data.
+        */
+        $req->validate([
+            'email'=>'required|email|unique:users'
+        ]);
+        
         // feeding data to database
         $user = new User;
         $user->name=$req->name;

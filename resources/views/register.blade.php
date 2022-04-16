@@ -1,4 +1,7 @@
 <h1>Register Page</h1>
+@error('email')
+    {{ $message }}
+@enderror
 <form action="/registration" method="post">
     @csrf
     <input type="hidden" name="id">
